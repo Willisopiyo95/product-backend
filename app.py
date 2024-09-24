@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load Excel data
-file_path = 'C:/Users/User/Desktop/try/homart_price_tag.xlsx'
+file_path = './homart_price_tag.xlsx'
 excel_data = pd.read_excel(file_path)
 
 # Function to search for product by code (case-insensitive)
